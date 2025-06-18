@@ -1,15 +1,14 @@
 from fastapi import APIRouter  
-from src.models.movie import Movie
+from src.models.movie import Movie, MovieCreate #import object MovieCreate 
 import json
 from pathlib import Path 
 
 router = APIRouter() 
 
 @router.post("/movies/", response_model=Movie)
-def add_movie(movie: Movie):
-	movie_dict = movie.dict()
+def add_movie(movie_create: MovieCreate): #ganti parameter
 
-	print(movie_dict)
+	#akses data movie_data.json nya
 	file_path = Path(__file__).resolve().parent.parent / "data" / "movie_data.json"
 
 
@@ -22,14 +21,31 @@ def add_movie(movie: Movie):
 		except json.JSONDecodeError:
 			data = []
 
-	data.append(movie_dict)
+	if not data: #krn data itu list dictionary jdi pke not
+		last_id = 0
+	else:
+		last_id = data[-1]["id"] #dapetin last data pada list, tapi kita cuma dapetin id nya aja dari dict
 
-	with open(file_path, "w", encoding="utf-8") as f:
+	new_id = last_id + 1
+
+	movie = Movie(
+		id=new_id,
+		title= movie_create.title,
+		description=movie_create.description,
+		duration=movie_create.duration,
+		rating=movie_create.rating,
+		cover=movie_create.cover
+	)
+
+	movie_dict = movie.dict()
+		
+	data.append(movie_dict) #ini tuh insert data movie nya
+
+	with open(file_path, "w", encoding="utf-8") as f: #ini saving 
 		try:
 			json.dump(data, f, indent=4)
 		except Exception as e:
 			print(e)
-
 
 	return movie
 

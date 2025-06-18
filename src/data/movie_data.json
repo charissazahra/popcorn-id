@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "title": "INCEPTION",
+        "description": "string",
+        "duration": 0,
+        "rating": 0.0,
+        "cover": "string",
+        "id": 1
+    },
+    {
+        "title": "hotel del luna",
+        "description": "string",
+        "duration": 0,
+        "rating": 0.0,
+        "cover": "string",
+        "id": 2
+    }
+]

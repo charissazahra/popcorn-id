@@ -1,9 +1,11 @@
 from pydantic import BaseModel
 
-class Movie(BaseModel): 
-	id: int
+class MovieCreate(BaseModel): 
 	title: str
 	description: str
 	duration: int
 	rating: float
 	cover: str
+
+class Movie(MovieCreate):
+	id: int
