@@ -94,5 +94,29 @@
         "rating": 8.8,
         "cover": "inception.jpg",
         "id": 12
+    },
+    {
+        "title": "HOW TO TRAIN YOUR DRAGON",
+        "description": "Saat ancaman kuno membahayakan bangsa Viking di pulau Berk, persahabatan antara Hiccup (Mason Thames), seorang Viking yang pandai berinovasi, dan Toothless, seekor naga Night Fury, menjadi kunci bagi kedua spesies untuk membuat masa depan baru bersama",
+        "duration": 7500,
+        "rating": 3.5,
+        "cover": "https://asset.tix.id/wp-content/uploads/2025/06/905a7f15-2c48-445f-a337-ee16d13ece2f-600x885.webp",
+        "id": 13
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 14
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 15
     }
 ]

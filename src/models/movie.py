@@ -19,6 +19,7 @@ class MovieCreate(BaseModel):
 			raise TypeError("Duration must be an integer")
 		if v <= 0:
 			raise ValueError("Duration must be positive")
+		return v
 
 class Movie(MovieCreate):
 	id: int

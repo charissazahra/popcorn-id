@@ -70,19 +70,3 @@ def test_add_movie_invalid_duration():
     response = client.post("/movies/", json=payload) #Kirim request POST ke /movies/ kayak dari Swagger/Postman
 
     assert response.status_code == 422
-
-    # payload = {
-    #     "title": "Inception",
-    #     "description": "Mind-bending thriller",
-    #     "duration": 10.2,
-    #     "rating": 8.8,
-    #     "cover": "inception.jpg"
-    # }
-
-    # response = client.post("/movies/", json=payload) #Kirim request POST ke /movies/ kayak dari Swagger/Postman
-
-    # assert response.status_code == 422
-
-
-
-
