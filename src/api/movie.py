@@ -49,3 +49,26 @@ def add_movie(movie_create: MovieCreate): #ganti parameter
 
 	return movie
 
+@router.get("/movies/{id}", response_model=Movie)
+def get_movie(movie_id : int): #ganti parameter
+
+	#akses data movie_data.json nya
+	file_path = Path(__file__).resolve().parent.parent / "data" / "movie_data.json"
+
+	if not file_path.exists():
+		raise FileNotFoundError("File movie_data tidak ditemukan. Pastikan sudah dibuat secara manual dulu")
+
+	with open(file_path, "r", encoding="utf-8") as f:
+		try:
+			data = json.load(f)
+		except json.JSONDecodeError:
+			data = []
+
+	for movie in data: #looping movie di dalam list of dict
+		if movie["id"] == movie_id: #dari id yg ada di list of dict dan berdasarkan id yg diminta
+			return movie
+
+ #klo loop selesai dan gak ada yg cocok
+	raise HTTPException(status_code=404, detail="Movie not found")
+
+
