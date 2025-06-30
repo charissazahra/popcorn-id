@@ -1,0 +1,122 @@
+[
+    {
+        "title": "INCEPTION",
+        "description": "string",
+        "duration": 0,
+        "rating": 0.0,
+        "cover": "string",
+        "id": 1
+    },
+    {
+        "title": "hotel del luna",
+        "description": "string",
+        "duration": 0,
+        "rating": 0.0,
+        "cover": "string",
+        "id": 2
+    },
+    {
+        "title": "lovely running",
+        "description": "drakor",
+        "duration": 7200,
+        "rating": 4.5,
+        "cover": "lovelyrunning.com",
+        "id": 3
+    },
+    {
+        "title": "HI-FIVE",
+        "description": "Lima orang biasa tiba-tiba memiliki berbagai kemampuan super setelah menerima transplantasi organ dari seorang pria dengan kekuatan psikis super. Mereka akhirnya harus membela diri dari sekelompok orang lain yang berusaha mencuri kekuatan mereka.",
+        "duration": 7200,
+        "rating": 4.5,
+        "cover": "https://asset.tix.id/wp-content/uploads/2025/06/60beef43-0f8b-48ad-89ea-b4eab4d528d1-600x885.webp",
+        "id": 4
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 5
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 6
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 7
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 8
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 9
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 10
+    },
+    {
+        "title": "",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 11
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 12
+    },
+    {
+        "title": "HOW TO TRAIN YOUR DRAGON",
+        "description": "Saat ancaman kuno membahayakan bangsa Viking di pulau Berk, persahabatan antara Hiccup (Mason Thames), seorang Viking yang pandai berinovasi, dan Toothless, seekor naga Night Fury, menjadi kunci bagi kedua spesies untuk membuat masa depan baru bersama",
+        "duration": 7500,
+        "rating": 3.5,
+        "cover": "https://asset.tix.id/wp-content/uploads/2025/06/905a7f15-2c48-445f-a337-ee16d13ece2f-600x885.webp",
+        "id": 13
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 14
+    },
+    {
+        "title": "Inception",
+        "description": "Mind-bending thriller",
+        "duration": 148,
+        "rating": 8.8,
+        "cover": "inception.jpg",
+        "id": 15
+    }
+]
