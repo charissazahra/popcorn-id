@@ -118,5 +118,13 @@
         "rating": 8.8,
         "cover": "inception.jpg",
         "id": 15
+    },
+    {
+        "title": "F1 THE MOVIE",
+        "description": "Dijuluki sebagai \"pebalap terhebat yang tak sempat bersinar,\" Sonny Hayes (Brad Pitt) adalah fenomena FORMULA 1 yang paling menjanjikan pada tahun 1990-an hingga sebuah kecelakaan di lintasan hampir mengakhiri kariernya. Tiga puluh tahun kemudian, ia menjadi pembalap bayaran nomaden, hingga ia didekati oleh mantan rekan setimnya, Ruben Cervantes (Javier Bardem), pemilik tim FORMULA 1 yang sedang kesulitan dan di ujung tanduk. Ruben meyakinkan Sonny untuk kembali ke FORMULA 1 untuk satu kesempatan terakhir demi menyelamatkan tim dan menjadi yang terbaik di dunia. Ia akan menjadi rekan satu tim dengan Joshua Pearce (Damson Idris), rookie berbakat tim yang ingin menentukan lajunya sendiri. Akan tetapi, ketika mesin bergemuruh, masa lalu Sonny kembali membayanginya, dan ia menyadari bahwa dalam FORMULA 1, rekan setim Anda adalah lawan terberat\u2014dan perjalanan menuju penebusan tak bisa dilalui seorang diri..",
+        "duration": 7200,
+        "rating": 4.5,
+        "cover": "https://asset.tix.id/wp-content/uploads/2025/06/9655fedf-bf93-45df-abe0-b56a81ed1932-600x885.webp",
+        "id": 16
     }
 ]

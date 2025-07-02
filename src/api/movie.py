@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from src.models.movie import Movie, MovieCreate #import object MovieCreate 
 import json
 from pathlib import Path 
+from typing import List
 
 router = APIRouter() 
 
@@ -49,7 +50,30 @@ def add_movie(movie_create: MovieCreate): #ganti parameter
 
 	return movie
 
-@router.get("/movies/{id}", response_model=Movie)
+@router.get("/movies/latest", response_model=List[Movie]) #agar fastAPI tau klo mau return list of movie, bukan 1 aja
+def get_movie_latest(): #tidak butuh parameter krn hnya membaca data dan mengambil 10 terakhir
+
+	#akses data movie_data.json nya
+	file_path = Path(__file__).resolve().parent.parent / "data" / "movie_data.json"
+
+	if not file_path.exists():
+		raise FileNotFoundError("File movie_data tidak ditemukan. Pastikan sudah dibuat secara manual dulu")
+
+	#baca file
+	with open(file_path, "r", encoding="utf-8") as f:
+		try:
+			data = json.load(f)
+		except json.JSONDecodeError:
+			data = []
+
+	#Urutkan berdasarkan 'id' secara descending (terbesar ke terkecil)
+	data_sorted = sorted(data, key=lambda x: x["id"], reverse=True)
+
+	# Ambil 10 data pertama (karena sudah descending), lalu buang yang title-nya kosong
+	latest_movie = [m for m in data_sorted if m.get("title", "").strip()][:10]
+	return latest_movie
+	
+@router.get("/movies/id/{id}", response_model=Movie)
 def get_movie(movie_id : int): #ganti parameter
 
 	#akses data movie_data.json nya
@@ -65,10 +89,9 @@ def get_movie(movie_id : int): #ganti parameter
 			data = []
 
 	for movie in data: #looping movie di dalam list of dict
-		if movie["id"] == movie_id: #dari id yg ada di list of dict dan berdasarkan id yg diminta
+		if movie["id"] == movie_id: #dari id yg ada list of dict dan berdasarkan id yg diminta
 			return movie
 
  #klo loop selesai dan gak ada yg cocok
 	raise HTTPException(status_code=404, detail="Movie not found")
-
 
