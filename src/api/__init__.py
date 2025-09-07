@@ -1,5 +1,3 @@
 from . import movie
 
-__all__=[
-	"movie"
-]
+__all__ = ["movie"]
